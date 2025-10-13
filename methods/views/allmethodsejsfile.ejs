@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all methods</title>
+</head>
+<body>
+    <!-- 'for' <-attribute is bound with 'id'<-attribute -->
+     <div>
+         <%=content%>
+    </div>
+    
+    <form id="normalid" method="post">
+        <input type="text" placeholder="ID" name="id">
+        <input type="text" placeholder="Secret" name="secret">
+        <input type="number" placeholder="Score" name="score">
+        <input type="submit" formaction="/getmedown"  value="GET_data">
+        <input type="submit" formaction="/postmedown" value="Post_data">
+        <input type="submit" formaction="/putmedown" value="ReplaceEntire_data">
+        <input type="submit" formaction="/patchmedown" value="Put_specific_data">
+        <input type="submit" formaction="/deletemedown" value="DeletetheDamnthing">
+ </form>
+</body>
+</html>
